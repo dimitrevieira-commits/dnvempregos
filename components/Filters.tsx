@@ -11,7 +11,7 @@ export default function Filters() {
   const [pais, setPais] = useState(params.get("pais") ?? "");
   const [cidade, setCidade] = useState(params.get("cidade") ?? "");
   const [modalidade, setModalidade] = useState(params.get("modalidade") ?? "");
-  const [periodo, setPeriodo] = useState(params.get("periodo") ?? "3"); // 1,3,7,14 dias
+  const [periodo, setPeriodo] = useState(params.get("periodo") ?? "3");
 
   useEffect(() => {
     const sp = new URLSearchParams();
@@ -21,7 +21,7 @@ export default function Filters() {
     if (modalidade) sp.set("modalidade", modalidade);
     if (periodo) sp.set("periodo", periodo);
     router.replace(`/?${sp.toString()}`);
-  }, [q, pais, cidade, modalidade, periodo]); // eslint-disable-line
+  }, [q, pais, cidade, modalidade, periodo, router]);
 
   return (
     <div className="filters">

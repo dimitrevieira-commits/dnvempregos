@@ -10,6 +10,5 @@ npm run dev
 Abrir http://localhost:3000
 
 ## Deploy (Vercel)
-- Crie um novo projeto e importe o repositório.
-- Adicione a env `NEXT_PUBLIC_BASE_URL` com a URL do próprio deploy (ex.: https://dnv-empregos.vercel.app).
-- Deploy.
+- Faça upload do projeto ou importe do GitHub.
+- Deploy automático, sem necessidade de variáveis de ambiente.

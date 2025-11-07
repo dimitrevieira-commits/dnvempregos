@@ -28,8 +28,8 @@ export default function JobCard({ job }: { job: Job }) {
       <div className="footer">
         <div className="meta">Publicado: {job.data_publicacao} • Coletado: {new Date(job.data_coleta).toLocaleString()}</div>
         <div className="meta">
-          <a href="https://www.dnvturismo.com.br" target="_blank" rel="noopener">www.dnvturismo.com.br</a> •
-          <a href="https://www.instagram.com/dnvturismo?igsh=MXMyOTUwbGozZHA4Zw==" target="_blank" rel="noopener">Instagram</a> •
+          <a href="https://www.dnvturismo.com.br" target="_blank" rel="noopener">www.dnvturismo.com.br</a> •{" "}
+          <a href="https://www.instagram.com/dnvturismo?igsh=MXMyOTUwbGozZHA4Zw==" target="_blank" rel="noopener">Instagram</a> •{" "}
           <a href="https://wa.me/message/VWCYVUQICMY3B1" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
